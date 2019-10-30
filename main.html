@@ -39,21 +39,45 @@
 	}
 	h1
 	{
-		text-align:center;
+		float:left;
 	}
 	a
 	{
 		color:#0AF !important;
 		text-decoration:none;
+		border-left:1px solid white;
+		border-right:1px solid white;
+		padding:5px;
 	}
+	#articleHeader
+	{
+		padding:10px;
+		height:50px;
+		border-bottom: 1px solid red;
+	}
+	.links
+	{
+		float:right;
+	}
+	strong
+	{
+		color:green !important;
+	}
+
 </style>
 <div id = "articleContainer">
-	<div class="header">	
-	<h1>Club informatique</h1>
-	
-	<h2>Actualités</h2>
+	<div id="articleHeader">	
+		<h1>Club informatique</h1>
+		<div class = "links">
+			<a id = "minimizeArticle" href = "#articleContainer">Afficher le reste du site</a>
+			<a id = "maximizeArticle" href = "#">Afficher en taille complète</a>
+			<a href = "https://github.com/mattmatt0">Accéder au code source</a>
+		</div>
+
+	</div>
+	<div style="background:url('https://media.discordapp.net/attachments/503918937671467008/639143766409609217/unknown.png?width=151&height=480') no-repeat center fixed;background-size:cover">
+	<h2 style="clear:both">Actualités</h2>
 		<h3>Réunion importante la semaine de la rentrée</h3>
 			<p>Afin de décider des horaires et du fonctionnement du club informatique, deux réunions auront lieu le <strong>Mardi 5 Novembre</strong> et le <strong>Vendredi 8 Novembre 2019</strong>, de <strong>13 heures à 13 heures 30</strong> Essayez d'être là aux deux, cela permettrait de mieux s'adapter aux besoins de chacun. De plus, nous en profiterons pour vous présenter le programme et le matériel. Nous comptons sur vous!</p>
-	<a id = "minimizeArticle" href = "#articleContainer">Afficher le reste du site</a>
-	<a id = "maximizeArticle" href = "#">Afficher en taille complète</a>
+	
 </div>
