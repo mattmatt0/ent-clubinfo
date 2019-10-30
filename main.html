@@ -1,0 +1,59 @@
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
+<style>
+	#articleContainer *
+	{
+		color:white;
+		font-family:'Raleway';
+	}
+	#articleContainer
+	{
+		z-index:9999;
+		top:2.5rem;
+		left:20%;
+		width:80%;
+		height:97.5rem;
+		background-color:black;
+		position:fixed;
+	}
+	#articleContainer:target
+	{
+		z-index:auto;
+		top:auto;
+		left:auto;
+		width:auto;
+		height:auto;
+		position:static;
+
+	}
+	#maximizeArticle
+	{
+		display:none;
+	}
+	#articleContainer:target #maximizeArticle
+	{
+		display:block;
+	}
+	#articleContainer:target #minimizeArticle
+	{
+		display:none;
+	}
+	h1
+	{
+		text-align:center;
+	}
+	a
+	{
+		color:#0AF !important;
+		text-decoration:none;
+	}
+</style>
+<div id = "articleContainer">
+	<div class="header">	
+	<h1>Club informatique</h1>
+	
+	<h2>Actualités</h2>
+		<h3>Réunion importante la semaine de la rentrée</h3>
+			<p>Afin de décider des horaires et du fonctionnement du club informatique, deux réunions auront lieu le <strong>Mardi 5 Novembre</strong> et le <strong>Vendredi 8 Novembre 2019</strong>, de <strong>13 heures à 13 heures 30</strong> Essayez d'être là aux deux, cela permettrait de mieux s'adapter aux besoins de chacun. De plus, nous en profiterons pour vous présenter le programme et le matériel. Nous comptons sur vous!</p>
+	<a id = "minimizeArticle" href = "#articleContainer">Afficher le reste du site</a>
+	<a id = "maximizeArticle" href = "#">Afficher en taille complète</a>
+</div>
